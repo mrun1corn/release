@@ -5,15 +5,13 @@
   "latest_version": "0.1.0",
   "latest_version_code": 1,
   "release_tag": "u_app-v0.1.0",
-  "release_date": "2026-09-21T00:00:00Z",
+  "release_date": "2026-09-21T09:20:10Z",
   "mandatory": false,
   "min_supported_version": "0.0.1",
-  "title": "v0.1.0 Initial Beta",
+  "title": "v0.1.0 Release",
   "changelog": [
-    "Complete modern redesign with UniRide design system",
-    "Real-time background sync with visual progress indicators",
-    "Live class routine, grade tracking, and billing invoice parser",
-    "Integrated in-app update checker and installer"
+    "Automated release build",
+    "Performance optimizations and bug fixes"
   ],
   "release_notes_url": "https://github.com/mrun1corn/release/releases/tag/u_app-v0.1.0",
   "assets": [
@@ -22,7 +20,7 @@
       "arch": "universal",
       "filename": "u_app-v0.1.0-android-universal.apk",
       "download_url": "https://github.com/mrun1corn/release/releases/download/u_app-v0.1.0/u_app-v0.1.0-android-universal.apk",
-      "size_bytes": 0,
+      "size_bytes": 65941414,
       "sha256": ""
     }
   ]
