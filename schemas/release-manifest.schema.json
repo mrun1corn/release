@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ReleaseManifest",
+  "description": "Schema for project release manifests in the mrun1corn release registry",
+  "type": "object",
+  "required": [
+    "project",
+    "name",
+    "latest_version",
+    "latest_version_code",
+    "release_tag",
+    "release_date",
+    "mandatory",
+    "min_supported_version",
+    "title",
+    "changelog",
+    "assets"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$",
+      "description": "Unique identifier for the project (lowercase alphanumeric, hyphens, underscores)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human readable display name of the application"
+    },
+    "latest_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[a-zA-Z0-9.]+)?$",
+      "description": "SemVer version string"
+    },
+    "latest_version_code": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Monotonically increasing build integer code"
+    },
+    "release_tag": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+-v[0-9]+\\.[0-9]+\\.[0-9]+(-[a-zA-Z0-9.]+)?$",
+      "description": "GitHub Release tag name matching <project>-v<version>"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 release timestamp"
+    },
+    "mandatory": {
+      "type": "boolean",
+      "description": "Whether this update is mandatory for all users"
+    },
+    "min_supported_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-[a-zA-Z0-9.]+)?$",
+      "description": "Minimum client version allowed to continue without forced update"
+    },
+    "title": {
+      "type": "string",
+      "description": "Headline/title of the release"
+    },
+    "changelog": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of changelog bullet points"
+    },
+    "release_notes_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Web URL to full release notes"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "platform",
+          "filename",
+          "download_url"
+        ],
+        "properties": {
+          "platform": {
+            "type": "string",
+            "enum": [
+              "android",
+              "ios",
+              "windows",
+              "macos",
+              "linux",
+              "web",
+              "cli"
+            ]
+          },
+          "arch": {
+            "type": "string",
+            "description": "Target architecture (e.g. arm64-v8a, universal, x64, x86_64, arm64)"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "download_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

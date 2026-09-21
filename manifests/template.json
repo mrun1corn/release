@@ -1,0 +1,28 @@
+{
+  "$schema": "../schemas/release-manifest.schema.json",
+  "project": "my_project",
+  "name": "My Project Display Name",
+  "latest_version": "1.0.0",
+  "latest_version_code": 1,
+  "release_tag": "my_project-v1.0.0",
+  "release_date": "2026-01-01T00:00:00Z",
+  "mandatory": false,
+  "min_supported_version": "1.0.0",
+  "title": "v1.0.0 Initial Release",
+  "changelog": [
+    "Initial public release",
+    "Feature X added",
+    "Bug fixes and performance improvements"
+  ],
+  "release_notes_url": "https://github.com/mrun1corn/release/releases/tag/my_project-v1.0.0",
+  "assets": [
+    {
+      "platform": "android",
+      "arch": "universal",
+      "filename": "my_project-v1.0.0-android-universal.apk",
+      "download_url": "https://github.com/mrun1corn/release/releases/download/my_project-v1.0.0/my_project-v1.0.0-android-universal.apk",
+      "size_bytes": 0,
+      "sha256": ""
+    }
+  ]
+}

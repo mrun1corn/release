@@ -1,0 +1,29 @@
+{
+  "$schema": "../schemas/release-manifest.schema.json",
+  "project": "u_app",
+  "name": "University Student Portal App",
+  "latest_version": "0.1.0",
+  "latest_version_code": 1,
+  "release_tag": "u_app-v0.1.0",
+  "release_date": "2026-09-21T00:00:00Z",
+  "mandatory": false,
+  "min_supported_version": "0.0.1",
+  "title": "v0.1.0 Initial Beta",
+  "changelog": [
+    "Complete modern redesign with UniRide design system",
+    "Real-time background sync with visual progress indicators",
+    "Live class routine, grade tracking, and billing invoice parser",
+    "Integrated in-app update checker and installer"
+  ],
+  "release_notes_url": "https://github.com/mrun1corn/release/releases/tag/u_app-v0.1.0",
+  "assets": [
+    {
+      "platform": "android",
+      "arch": "universal",
+      "filename": "u_app-v0.1.0-android-universal.apk",
+      "download_url": "https://github.com/mrun1corn/release/releases/download/u_app-v0.1.0/u_app-v0.1.0-android-universal.apk",
+      "size_bytes": 0,
+      "sha256": ""
+    }
+  ]
+}
