@@ -2,24 +2,26 @@
   "$schema": "../schemas/release-manifest.schema.json",
   "project": "u_app",
   "name": "University Student Portal App",
-  "latest_version": "0.1.0",
+  "latest_version": "0.2.0",
   "latest_version_code": 1,
-  "release_tag": "u_app-v0.1.0",
-  "release_date": "2026-09-21T09:20:10Z",
+  "release_tag": "u_app-v0.2.0",
+  "release_date": "2026-09-21T09:38:39Z",
   "mandatory": false,
   "min_supported_version": "0.0.1",
-  "title": "v0.1.0 Release",
+  "title": "v0.2.0 Release",
   "changelog": [
-    "Automated release build",
-    "Performance optimizations and bug fixes"
+    "✨ Automatic In-App Update Checker",
+    "🔄 Live Background Portal Sync Indicator",
+    "⚡ Faster routine and transcript parsing",
+    "🛠️ Bug fixes and stability improvements"
   ],
-  "release_notes_url": "https://github.com/mrun1corn/release/releases/tag/u_app-v0.1.0",
+  "release_notes_url": "https://github.com/mrun1corn/release/releases/tag/u_app-v0.2.0",
   "assets": [
     {
       "platform": "android",
       "arch": "universal",
-      "filename": "u_app-v0.1.0-android-universal.apk",
-      "download_url": "https://github.com/mrun1corn/release/releases/download/u_app-v0.1.0/u_app-v0.1.0-android-universal.apk",
+      "filename": "u_app-v0.2.0-android-universal.apk",
+      "download_url": "https://github.com/mrun1corn/release/releases/download/u_app-v0.2.0/u_app-v0.2.0-android-universal.apk",
       "size_bytes": 65941414,
       "sha256": ""
     }
