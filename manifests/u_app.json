@@ -2,26 +2,24 @@
   "$schema": "../schemas/release-manifest.schema.json",
   "project": "u_app",
   "name": "University Student Portal App",
-  "latest_version": "0.2.3",
-  "latest_version_code": 2,
-  "release_tag": "u_app-v0.2.3",
-  "release_date": "2026-09-21T10:51:52Z",
+  "latest_version": "0.2.4",
+  "latest_version_code": 4,
+  "release_tag": "u_app-v0.2.4",
+  "release_date": "2026-09-21T11:08:12Z",
   "mandatory": false,
   "min_supported_version": "0.0.1",
-  "title": "v0.2.3 Release",
+  "title": "v0.2.4 Release",
   "changelog": [
-    "✨ Dynamic runtime version detection via package_info_plus",
-    "🔑 Signed with permanent release keystore",
-    "📲 Seamless in-place updates",
-    "🚀 Optimized Gradle caching & parallel build"
+    "Automated release build",
+    "Performance optimizations and bug fixes"
   ],
-  "release_notes_url": "https://github.com/mrun1corn/release/releases/tag/u_app-v0.2.3",
+  "release_notes_url": "https://github.com/mrun1corn/release/releases/tag/u_app-v0.2.4",
   "assets": [
     {
       "platform": "android",
       "arch": "universal",
-      "filename": "u_app-v0.2.3-android-universal.apk",
-      "download_url": "https://github.com/mrun1corn/release/releases/download/u_app-v0.2.3/u_app-v0.2.3-android-universal.apk",
+      "filename": "u_app-v0.2.4-android-universal.apk",
+      "download_url": "https://github.com/mrun1corn/release/releases/download/u_app-v0.2.4/u_app-v0.2.4-android-universal.apk",
       "size_bytes": 65958002,
       "sha256": ""
     }
